@@ -8,11 +8,11 @@ public class DynamicDataSourceContextHolder {
 
     private static final ThreadLocal<String> contextHolder = new ThreadLocal<String>() {
         /**
-         * 将 master 数据源的 key作为默认数据源的 key
+         * 将 db1 数据源的 key作为默认数据源的 key
          */
         @Override
         protected String initialValue() {
-            return "master";
+            return "db1";
         }
     };
 
